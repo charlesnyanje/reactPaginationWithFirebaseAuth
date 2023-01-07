@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 1, 1);
+  h1 {
+    margin: 1.5rem auto;
+  }
+}
+
+image-input {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 5rem;
+}
+
+.btn-signout {
+  padding: 0.5rem;
+  border: none;
+  color: rgb(104, 103, 103);
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+ 
+}
+
+.btn-signout:hover {
+  background-color: rgb(211, 212, 214);
+  transition: 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50vh;
+  width: 60vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 1rem;
+}
+
+.image {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.11);
+  height: 10rem;
+  width: 10rem;
+}
+
+.profileDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,54 @@
+.nameInput {
+ background: url("../../assets/svg/badgeIcon.svg") 2.5% center no-repeat #ffffff;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  input,
+  .nameInput {
+    padding: 0 5rem;
+    width: 70vw;
+  }
+
+  .signUp{
+    
+    margin-left: -62rem;
+  }
+
+  .signUpBar{
+    
+    margin-left: -40rem;
+    
+  }
+}
+
+.signUpText {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.signUpBar{
+    display:flex;
+    justify-content: flex-end;
+    margin-top:-5rem;
+    margin-right:1rem;
+}
+
+.signUpButton {
+  background-color: #08277e;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.signInLink{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  color:#08277e;
+  font-weight: 700;
+}

@@ -1,24 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Signup from "./pages/Signup";
+import Signin from "./pages/Signin";
+import Users from "./pages/Users";
+import Dashboard from "./pages/Home";
+import Protected from "./components/Protected";
+import ForgotPassword from "./pages/ForgotPassword";
+import SharedLayout from "./pages/SharedLayout";
+
+import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthContextProvider>
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Protected>
+                  <SharedLayout />
+                </Protected>
+              }
+            >
+              <Route
+                path="/Dashboard"
+                element={
+                  <Protected>
+                    <Dashboard />
+                  </Protected>
+                }
+              />
+
+              <Route
+                path="/About"
+                element={
+                  <Protected>
+                    <About />
+                  </Protected>
+                }
+              />
+
+              <Route
+                path="/Users"
+                element={
+                  <Protected>
+                    <Users />
+                  </Protected>
+                }
+              />
+            </Route>
+
+            <Route index element={<Signin />} />
+
+            <Route path="/Signup" element={<Signup />} />
+
+            <Route path="/ForgotPassword" element={<ForgotPassword />} />
+          </Routes>
+        </Router>
+      </AuthContextProvider>
+    </>
   );
 }
 

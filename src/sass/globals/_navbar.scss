@@ -1,0 +1,34 @@
+$navbar-color: rgba(244, 242, 244, 1);
+
+nav {
+  background-color: $navbar-color;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $navbar-color;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.11);
+  height: 4.5rem;
+  width: 100%;
+
+  overflow: hidden;
+
+  a {
+    margin: 3.5rem;
+  }
+}
+
+.link {
+  color: #4d4d4e;
+}
+
+.active {
+  color: rgb(17, 182, 17);
+}
+
+@media (max-width: 640px) {
+  nav {
+    a {
+      margin: 0.5rem;
+    }
+  }
+}
