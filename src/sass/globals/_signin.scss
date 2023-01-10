@@ -1,8 +1,6 @@
-
 .passwordInput,
 .nameInput,
 .emailInput {
-  
   border: none;
   background: #ffffff;
   border-radius: 3rem;
@@ -16,7 +14,8 @@
 
 .emailInput {
   margin-bottom: 2rem;
-  background: url("../../assets/svg/personIcon.svg") #ffffff 2.5% center no-repeat;
+  background: url("../../assets/svg/personIcon.svg") #ffffff 2.5% center
+    no-repeat;
 }
 
 .passwordInput {
@@ -90,7 +89,6 @@ button {
   height: 60px;
   width: 60px;
   cursor: pointer;
-
 }
 
 .signInBar {
@@ -101,42 +99,42 @@ button {
   margin-right: 1rem;
 }
 
-.signUpLink{
-
-  display:flex;
+.signUpLink {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
   color: #08277e;
   font-weight: 700;
-  
-
 }
 
-@media (min-width:1024px){
-  .signIn{
-
+@media (min-width: 1024px) {
+  .signIn {
     margin-left: -62rem;
-      }
+  }
 
-  .signInBar{
+  .signInBar {
     display: flex;
     justify-content: flex-start;
     margin-left: -40rem;
   }
 
-  .signInText{
-    margin-left:1rem;
+  .signInText {
+    margin-left: 1rem;
   }
-
-  
 }
 
-.googleAuth{
-  display:flex;
+.googleAuth {
+  display: flex;
   justify-content: center;
-  align-items:center;
-  margin-top:2rem;
+  align-items: center;
+  margin-top: 2rem;
   cursor: pointer;
 }
 
+@media (max-width: 640px) {
+  .signInText {
+    font-size: 2.5rem;
+    margin-left: 0.5px;
+  }
+}
